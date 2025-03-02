@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <title>Good Thymes Virtual Grocery</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+  <div>
+    <h1>Good Thymes Virtual Grocery</h1>
+    <table>
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>In Stock</th>
+      </tr>
+      <tr>
+        <td th:text="${product.id}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.inStock}"></td>
+      </tr>
+    </table>
+    <th:block th:if="${not #lists.isEmpty(comments)}">
+      <table>
+        <div th:each="comment : ${comments}">
+          <tr>
+            <th>Comment ID</th>
+            <th>Comment Text</th>
+          </tr>
+          <tr>
+            <td th:text="${comment.id}"></td>
+            <td th:text="${comment.text}">Text</td>
+          </tr>
+        </div>
+      </table>
+    </th:block>
+
+  </div>
+
+</body>
+
+</html>
