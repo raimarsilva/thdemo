@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>rai.practices</groupId>
-	<artifactId>demo</artifactId>
+	<artifactId>thdemo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Thdemo</name>
+	<description>Thymeleaf demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>

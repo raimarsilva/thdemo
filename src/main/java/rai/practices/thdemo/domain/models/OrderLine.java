@@ -1,4 +1,4 @@
-package rai.practices.demo.domain.models;
+package rai.practices.thdemo.domain.models;
 
 public class OrderLine {
   private Product product;

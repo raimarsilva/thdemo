@@ -1,9 +1,9 @@
-package rai.practices.demo.controllers;
+package rai.practices.thdemo.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import rai.practices.demo.domain.services.ProductService;
+import rai.practices.thdemo.domain.services.ProductService;
 
 import org.springframework.web.bind.annotation.GetMapping;
 

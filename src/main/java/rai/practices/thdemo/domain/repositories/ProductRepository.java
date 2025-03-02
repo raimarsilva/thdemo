@@ -1,12 +1,12 @@
-package rai.practices.demo.domain.repositories;
+package rai.practices.thdemo.domain.repositories;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import rai.practices.demo.domain.models.Product;
-import rai.practices.demo.domain.models.Comment;
+import rai.practices.thdemo.domain.models.Product;
+import rai.practices.thdemo.domain.models.Comment;
 
 @Repository
 public class ProductRepository {

@@ -1,10 +1,10 @@
-package rai.practices.demo.domain.services;
+package rai.practices.thdemo.domain.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import rai.practices.demo.domain.models.Product;
-import rai.practices.demo.domain.repositories.ProductRepository;
+import rai.practices.thdemo.domain.models.Product;
+import rai.practices.thdemo.domain.repositories.ProductRepository;
 
 @Service
 public class ProductService {
