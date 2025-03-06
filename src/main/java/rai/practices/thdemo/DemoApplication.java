@@ -12,6 +12,8 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 		getLogger("DemoApplication")
 				.info("Spring Framework version: " + SpringVersion.getVersion());
+		getLogger("DemoApplication")
+				.info("Thymeleaf version: " + org.thymeleaf.Thymeleaf.getVersion());
 	}
 
 }
