@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en" xml:lang="en">
 
 <head>
   <title>Good Thymes Virtual Grocery</title>
@@ -7,8 +7,10 @@
 </head>
 
 <body>
+  <p th:text="${thVersion}">Local</p>
   <div>
     <h1>Good Thymes Virtual Grocery</h1>
+    <p th:text="#{product.welcome}">Welcome</p>
     <table>
       <tr>
         <th>Product ID</th>
@@ -16,16 +18,16 @@
         <th>Product Price</th>
         <th>In Stock</th>
       </tr>
-      <tr>
+      <tr th:if="(${product} != null)">Tem produto
         <td th:text="${product.id}"></td>
         <td th:text="${product.name}"></td>
         <td th:text="${product.price}"></td>
         <td th:text="${product.inStock}"></td>
       </tr>
     </table>
-    <th:block th:if="${not #lists.isEmpty(comments)}">
+    <th:block th:if="${!#lists.isEmpty(product.comments)}">
       <table>
-        <div th:each="comment : ${comments}">
+        <div th:each="comment : ${product.comments}">
           <tr>
             <th>Comment ID</th>
             <th>Comment Text</th>
