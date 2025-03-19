@@ -8,6 +8,10 @@
 
 <body>
   <p th:text="${thVersion}">Local</p>
+  <p th:text="${#locale.language}">Language</p>
+  <p th:text="${#locale.country}">Country</p>
+  <p th:text="${#locale.displayLanguage}">Display Language</p>
+  <p th:text="${#locale.displayCountry}">Display Country</p>
   <div>
     <h1>Good Thymes Virtual Grocery</h1>
     <p th:text="#{product.welcome}">Welcome</p>
