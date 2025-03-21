@@ -13,12 +13,10 @@ public class ProductController {
   @Autowired
   private ProductService productService;
 
-  @GetMapping("/products")
+  @GetMapping({ "/products", "/" })
   public String viewRootPage(Model model) {
     model.addAttribute("product", productService.getProduct());
-    // model.addAttribute("comments", productService.getProduct().comments());
     model.addAttribute("thVersion", org.thymeleaf.Thymeleaf.getVersion());
-    System.out.println(model.toString());
     return "product";
   }
 
