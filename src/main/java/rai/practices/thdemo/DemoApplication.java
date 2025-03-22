@@ -2,18 +2,13 @@ package rai.practices.thdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.core.SpringVersion;
-import static java.util.logging.Logger.getLogger;
+import static rai.practices.thdemo.utils.Versions.showVersions;
 
 @SpringBootApplication
 public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
-		getLogger("DemoApplication")
-				.info("Spring Framework version: " + SpringVersion.getVersion());
-		getLogger("DemoApplication")
-				.info("Thymeleaf version: " + org.thymeleaf.Thymeleaf.getVersion());
+		showVersions();
 	}
-
 }
