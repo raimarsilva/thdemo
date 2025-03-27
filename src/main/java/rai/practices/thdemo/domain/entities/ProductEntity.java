@@ -1,5 +1,6 @@
 package rai.practices.thdemo.domain.entities;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 import jakarta.persistence.Column;
@@ -11,11 +12,16 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "products")
-public record ProductEntity(
-        @Id @GeneratedValue(strategy = GenerationType.AUTO) @Column(nullable = false) UUID id,
-        @Column(nullable = false) String name) {
+public class ProductEntity implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(nullable = false)
+    private UUID id;
+    @Column(nullable = false)
+    private String name;
 
     public ProductEntity(String name) {
-        this(UUID.randomUUID(), name);
+        this.name = name;
     }
 }

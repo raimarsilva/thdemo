@@ -1,22 +1,13 @@
 package rai.practices.thdemo.domain.dtos;
 
-import java.util.UUID;
-
 public class ProductEntityDTO {
-  private UUID id;
   private String name;
 
-  public ProductEntityDTO(UUID id, String name) {
-    this.id = id;
+  public ProductEntityDTO(String name) {
     this.name = name;
   }
 
-  public UUID getId() {
-    return id;
-  }
-
-  public void setId(UUID id) {
-    this.id = id;
+  public ProductEntityDTO() {
   }
 
   public String getName() {

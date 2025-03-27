@@ -1,5 +1,7 @@
 package rai.practices.thdemo.domain.services;
 
+import java.util.UUID;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
